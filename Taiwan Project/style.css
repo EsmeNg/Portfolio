@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  background-color: #c4c4c4;
+  padding: 1.5rem;
+  /*width: 100%唔加試影響*/
+}
+
+nav {
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0.75rem;
+}
+
+nav ul li {
+  display: flex;
+}
+
+nav ul li a {
+  padding: 0.75rem 1rem;
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all, 1s;
+}
+
+nav ul li a:hover,
+a.active {
+  color: white;
+}
+
+p {
+  font-weight: lighter;
+}
+
+.h1fontsize {
+  font-size: 2.5rem;
+}
+.h3fontsize {
+  font-size: 1rem;
+}
+
+main {
+  /*width:100%;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 2rem;
+}
+
+section.left {
+  flex: 1 1 800px;
+}
+
+section.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 300px;
+}
+
+section.right h4 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+section.right p {
+  margin: 2rem 0rem 4rem 0rem;
+}
+
+#curve_chart {
+  width: 100%;
+  height: 80%;
+}
+
+@media screen and (max-width: 500px) {
+  #curve_chart {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
